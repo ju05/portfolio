@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juliana Schmidt Portfolio</title>
+    <script src="https://kit.fontawesome.com/ac26c51492.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+<body>
+  <header>
+    <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="container-fluid">          
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button class="button-nav" role="button"> <a class="nav-link active" aria-current="page" href="#about">About</button></a>
+              </li>
+              <li class="nav-item">
+                <button class="button-nav" role="button"> <a class="nav-link active" aria-current="page" href="#projects">Work</button></a>
+              </li>
+              <li class="nav-item">
+                <button class="button-nav" role="button"> <a class="nav-link active" aria-current="page" href="#contact">Contact</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="astronaut"></div>
+    <div class="container-md position-sticky top-50 start-50 left-62% translate-middle col-6" id="quote">
+      <h1>"Our passion for learning <br>
+        is our tool for survival." <br></h1>
+          - Carl Sagan, Cosmos -
+    </div>
+  
+  </header>
+
+<main>
+  <div class="overlay">
+    <!-- ABOUT -->
+    <div class="about_me">
+      <div class="col col-lg-4 d-flex justify-content-center" id="profile_picture" style="width: 200px;">
+        <img src="images/profile-j.amaralwork@gmail.com.jpeg" class="rounded-circle" alt="julianas-portrait-blackandwhite-in-stelar-background", widdt="200%" height="200%" >
+      </div>
+      <div class="col col-lg-6 t-6 text-center">
+      <section id="about">
+        <h1 class="hi-there">Hi <br> There!</h1>
+        <p class="p-dark-bg" id="about_text">
+          Welcome to my Portfolio! <br>
+          My name is Juliana Schmidt, <br>
+          I am a Junior Full-Stack Developer. <br>
+         </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- MY SKILLS -->
+  <section class="my_skills" id="my_skills">
+   <div class="my_skills_wrapper">
+      <div class="shape-1"></div>
+      <div class="shape-2"></div>
+      <div class="shape-3"></div>
+      <div class="my_skills_container">
+        <h2>MY CODING SKILLS</h2>
+        <div class="skills">
+          <div class="details">
+          <span><img src="images/python_icon.png" height="50px" width="50px"></span>
+          <span>PYTHON</span>
+          <span>90%</span>
+          </div>
+          <div class="bar">
+          <div id="python-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+          <span><img src="images/django_icon.png" height="50px" width="50px"></span>
+          <span>DJANGO</span>
+          <span>90%</span>
+          </div>
+          <div class="bar">
+          <div id="django-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+          <span><img src="images/sql_icon.png" width="50px" height="50px"></span>
+          <span>SQL</span>
+          <span>80%</span>
+          </div>
+          <div class="bar">
+          <div id="sql-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+          <span><img src="images/postresql_icon.png" width="50px" height="50px"></span>
+          <span>POSTGRESQL</span>
+          <span>80%</span>
+          </div>
+          <div class="bar">
+          <div id="postgreSQL-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+          <span><img src="images/js_icon.jpg" width="50px" height="50px"></span>
+          <span>JAVASCRIPT</span>
+          <span>60%</span>
+          </div>
+          <div class="bar">
+          <div id="js-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+            <span><img src="images/html_icon.png" width="50px" height="50px"></span>
+          <span>HTML</span>
+          <span>90%</span>
+          </div>
+          <div class="bar">
+          <div id="html-bar"></div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="details">
+          <span><img src="images/css_icon.png" width="50px" height="50px"></span>
+          <span>CSS</span>
+          <span>70%</span>
+          </div>
+          <div class="bar">
+          <div id="css-bar"></div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+    <!-- PROJECTS -->
+    <div class="container-lg shadow-lg p-3 mb-5 bg-body rounded w-100" id="first_container">
+    <section id="projects" class="projects">
+      <h1 class="projects_title">My Projects</h1>
+      <div class="row justify-content-md-center">
+       <div class="col col-lg-12 p-5">
+         <h1 class="project_summary">RecipApp</h1>
+         <p class="project_summary">A meals planner and searcher with special login (regular users or chefs/restaurants)
+          made with Google OAuth 2.0 authentication through Dajngo allauth.
+          The users can search for a recipe and add it to their calendar using Google Calendar API.
+         </p>
+         <img src="images/recipapp.jpg" class="img-fluid p-5" alt="...">
+         <div class="d-grid gap-2 col-2 mx-auto">
+          <button class="btn border-0" type="button" style="background-color:#232946; color:#b8c1ec"> <a href="https://www.loom.com/share/52b945b979174f31b6d26287cd38da52" target="_blank"> Watch the Video </a></button>
+          <button class="btn border-0" type="button" style="background-color:#232946; color:#b8c1ec"><a href="https://github.com/ju05/FinalProject" target="_blank"> Check the Code </a></button>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <div class="container-lg shadow-lg p-3 mb-5 bg-body rounded w-100">
+      <div class="row justify-content-md-center">
+       <div class="col col-lg-12 p-5">
+        <h1 class="project_summary">Hotel Management</h1>
+        <p class="project_summary">A website with two interfaces one for the visitors and another for the staff.
+        The visitor interface allows to login, contact the hotel, check availability and make a Booking.
+        The project was made with Django and PostregrSQL allowing the staff management: they can make reservations for the users, delete and edit bookings
+        and also add new rooms.
+        </p>
+         <img src="images/hoteltorquay.jpg" class="img-fluid" alt="print_screen_project">
+         <div class="d-grid gap-2 col-2 mx-auto">
+          <button class="btn border-0" type="button" style="background-color:#232946; color:#b8c1ec"> <a href="https://www.loom.com/share/ff4642f015154c37b784da1511e2580f" target="_blank"> Watch the Video </a></button>
+          <button class="btn border-0" type="button" style="background-color:#232946; color:#b8c1ec"><a href="https://github.com/ju05/Hotel_Torquay" target="_blank"> Check the Code </a></button>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <div class="container-lg shadow-lg p-3 mb-5 bg-body rounded w-100">
+      <div class="row justify-content-md-center">
+       <div class="col col-lg-12 p-5">
+          <h1 class="project_summary">Data</h1>
+          <p class="project_summary">A Project to analyse Covid-19 real Data
+          using Python libraries such as datetime, pandas, numpy, matplotlib, and seaborn.
+          </p>
+          <img src="images/covid_analysis.jpg"  class="img-fluid" alt="print_screen_project">
+          <div class="d-grid gap-2 col-2 mx-auto">
+            <button class="btn border-0" type="button" style="background-color:#232946; color:#b8c1ec;"> <a href="https://www.loom.com/share/ff4642f015154c37b784da1511e2580f" target="_blank"> Watch the Video </a></button>
+          </div>
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h1 style="color:#b8c1ec; align-content: center;">Contact-me!</h1>
+      <div class="container-lg d-flex justify-content-center mw-100 shadow-lg p-6 mb-3 bg-body rounded text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="https://www.linkedin.com/in/juliana-schmidt-4832a168/?locale=en_US" target="_blank" aria-placeholder="Linkedin" style="color: #232946"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+            </div>
+            <div class="col">
+              <a href="https://github.com/ju05" target="_blank" aria-placeholder="GitHub" style="color: #232946"><i class="fa-brands fa-github fa-4x"></i></a>
+            </div>
+            <div class="col">
+              <a href="mailto:j.amaralwork@gmail.com?subject=Subject&body=Body" id="mailto" style="color: #232946"><i class="fa-solid fa-envelope fa-4x"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+    
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
