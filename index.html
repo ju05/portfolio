@@ -2,43 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Juliana Schmidt Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <script src="https://kit.fontawesome.com/ac26c51492.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">    
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <title>Juliana Schmidt Portfolio</title>
   </head>
 
 <body>
   <header>
-    <!-- NAVBAR -->
-      <nav class="navbar">
-        <div class="container-fluid">          
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <button class="button-nav" role="button"> <a class="nav-link active" aria-current="page" href="#about">About</button></a>
-              </li>
-              <li class="nav-item">
-                <button class="button-nav" role="button"> <a class="nav-link active" aria-current="page" href="#projects">Work</button></a>
-              </li>
-              <li class="nav-item">
-                <button class="button-nav" role="button"> <a class="nav-link active" aria-current="page" href="#contact">Contact</button></a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <button class="navbar-toggler" style="color:#b8c1ec ;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <button class="button-nav"><a class="nav-item nav-link active" href="#about">About </button></a>
+          <button class="button-nav"><a class="nav-item nav-link" href="projects">Work</button></a>
+          <button class="button-nav"><a class="nav-item nav-link" href="#">Contact</button></a>
         </div>
-      </nav>
-
-    <div class="astronaut"></div>
-    <div class="container-md position-sticky top-50 start-50 left-62% translate-middle col-6" id="quote">
-      <h1>"Our passion for learning <br>
-        is our tool for survival." <br></h1>
-          - Carl Sagan, Cosmos -
+      </div>
+    </nav>
+    
+      <div class="cover-wrapper" style="background-image: url(./images/cover-dall-e_j.amaralwork@gmail.com.jpeg);">
+        <div class="color-overlay d-flex justify-content-end align-items-center">
+          <h1 class="quote">"Our passion for learning <br>is our tool for survival." <br>- Carl Sagan, Cosmos -</h1>
+        </div>
+      </div>
     </div>
-  
   </header>
 
 <main>
@@ -50,8 +43,8 @@
       </div>
       <div class="col col-lg-6 t-6 text-center">
       <section id="about">
-        <h1 class="hi-there">Hi There!</h1>
-        <p class="p-dark-bg animate__animated animate__bounce" id="about_text">
+        <h1 class="hi-there animate__bounce">Hi There!</h1>
+        <p class="about_text animate__bounce">
           Welcome to my Portfolio! <br>
           My name is Juliana Schmidt, <br>
           I am a Junior Full-Stack Developer. <br>

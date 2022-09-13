@@ -3,31 +3,22 @@
   --main-headline: #fffffe;
   --main-paragraph:#b8c1ec;
   --first-bg-button:pink;
-  /* --main-cards:#fffffe; */
-  /* --first-card-color: #fffffe; */
   --second-bg: pink;
   --second-text-color: #232946;
   --second-head: #fffffe;
   --second-paragraf:#b8c1ec;
   --shadow-in-dark: rgba(232, 231, 238, 0.905);
-  /* font-family */
   --font-family: "Raleway"
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 h1,h2,h3,h4,h5,h6,a{
 font-family: Verdana;
 text-decoration: none;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-
-}
-
-body{
+html, body{
+  min-height: 100%;
   background-color: var(--main-bg); 
 }
 
@@ -43,31 +34,43 @@ body::-webkit-scrollbar-thumb {
   background: var(--second-paragraf);
 }
 
-.astronaut{
-  background-image: url(images/cover-dall-e_j.amaralwork@gmail.com.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height:122vh;
-  width: 117;
-
+.cover-wrapper{
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,2);
 }
 
-#quote{
-  font-size: 36px;
-  font-family: Verdana!important;
+.color-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+
+.quote{
+  font-size: 2rem;
   color: var(--main-paragraph);
-  display: block !important;  
-  margin-top: -500px;
-  left: 50px;
-  text-align: center;
+  padding: 10%;;
 }
-.translate-middle {
-  transform: translate(-5%,-15%)!important;
+
+@media only screen and (max-width: 1024px) {
+  .cover-wrapper{
+    min-height: 30vh;
+  }
+  .color-overlay{
+    background-color: #23294698;
+  }
+  .quote{
+    font-size: calc(1.525rem+3.3vw) ;
+  }
 }
-/* NAVBAR */
 .navbar{
   background-color: transparent;
-  position: absolute;
+  position: center;
+  display: block;
+  float: right !important;
+  z-index: 3;
 }
 
 .nav-link{
@@ -147,7 +150,7 @@ p{
   color: var(--main-paragraph);
   font-size: 1.5rem;
 }
-/* END NAVBAR */
+
 .overlay {
     background-color: var(--main-bg);
     display: flex;
@@ -156,37 +159,10 @@ p{
     column-gap: 100px;
 }
 
-header {
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    min-height: 661px;
-}
-
-
 .start-50{
   left: 65% !important;
   top: 45% !important;
 
-}
-
-.hide{
-  display: none;
-  width: 50%;
-  height: 100%;
-  justify-content: center;
-}
-
-.hover:hover + .hide{
-  display: block;
-  position: relative;
-  background-color: rgba(255, 192, 203, 0.342);
-  color: var(--second-text-color);
-}
-
-.text_hover{
-  color: var(--second-text-color);
-  font-weight: 20%;
 }
 
 .hi-there {
@@ -233,7 +209,7 @@ header {
 }
 
 .my_skills_wrapper{
-  width: 80% !important;
+  width: 75vh;
   min-width: 500px !important;
   position: relative !important;
   transform: translate(-50%, -50%) !important;
@@ -242,9 +218,9 @@ header {
 }
 
 .my_skills_container{
-  width: 190%;
+  width: 150vh;
   left: -40%;
-  padding: 50px 30px;
+  padding: 60px 40px;
   position: absolute;
   margin: -380px 0 0 -25px;
   background-color: #23294670;
@@ -409,10 +385,10 @@ h2{
 }
 
 @media only screen and (max-width: 600px) {
-  header {display: none;}
-  .astronaut { display: none;} ;
+  /* header {display: none;}
+  .cover { display: none;} ;
   .translate-middle {display: none;}
-  #quote { display: none;};
+  #quote { display: none;}; */
   #profile_picture {width: 100px; height: 100px; align-self: auto;}
   .container-md {display: none;};
   #my_skills_container { width: 48vh; left: 20%;};
@@ -420,6 +396,7 @@ h2{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
+  #profile_picture {width: 150px; height: 150px; align-self: auto;}
   .container-md {display: none;};
   #my_skills_container { width: 48vh; left: 20%;}
 
