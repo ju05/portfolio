@@ -49,15 +49,14 @@ body::-webkit-scrollbar-thumb {
   background-size: contain;
   height:122vh;
   width: 117;
-  z-index: 0;
+
 }
 
 #quote{
   font-size: 36px;
   font-family: Verdana!important;
   color: var(--main-paragraph);
-  display: block !important;
-  z-index: 3;
+  display: block !important;  
   margin-top: -500px;
   left: 50px;
   text-align: center;
@@ -211,21 +210,8 @@ header {
     -7px 6px #cdd2d5,
     -7px 8px #808d93,
     -8px 7px #cdd2d5;
-  animation-duration: 8s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
 }
-@keyframes slidein {
-0% {
-  margin-left: 0%;
-}
-50% {
-  margin-left: 300px;
-}
-100% {
-  margin-left: 0%;
-}
-}
+
 #profile_picture{
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -422,28 +408,32 @@ h2{
   position: inherit;
 }
 
-@media all and(max-width: 500px){
-  .hi-there {
-  @keyframes slidein {
-    0% {
-      margin-left: none;
-    }
-    50% {
-      margin-left: none;
-    }
-    100% {
-      margin-left: none;
-    }
-    }
-}
-}
-
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   header {display: none;}
   .astronaut { display: none;} ;
   .translate-middle {display: none;}
   #quote { display: none;};
+  #profile_picture {width: 100px; height: 100px; align-self: auto;}
+  .container-md {display: none;};
+  #my_skills_container { width: 48vh; left: 20%;};
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
   .container-md {display: none;};
   #my_skills_container { width: 48vh; left: 20%;}
-  
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+  .container-md {display: none;};
+  #my_skills_container { width: 48vh; left: 20%;}
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+  .container-md {display: none;};
+  #my_skills_container { width: 48vh; left: 20%;}
+
 }
