@@ -1,0 +1,255 @@
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 411px) {
+  .navbar{
+    position: relative;
+  }
+  .cover-wrapper{
+    height: 35vh;
+  }     
+  .color-overlay{
+    background-color: #23294698;
+  }
+  .quote{
+    font-size: 1rem;
+  }      
+  #content{
+    width: 100vw;
+  }
+  .about-presentation{
+    flex-direction: column-reverse;
+  }
+ .profile-picture{
+    width: 30vw;
+    height: 20vh;
+  }
+  .about-text h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-skills-container {
+    width: 90vw;
+    left: 5%;
+    padding: 25px 10px;
+  }
+  .shape-1{
+    height: 180px;
+    width: 180px;
+    left:30%;
+  }
+  .shape-2{
+    height: 80px;
+    width:80px;
+    top: 90px;
+  }
+  .shape-3{
+    height: 200px;
+    width: 200px;
+    top: 500px;
+    left: 40px;
+  }
+
+.project-card{
+  width: 100%;
+  margin-left: 0;
+}
+}
+  /* TABLET */
+@media only screen and (min-width: 412px) and (max-width: 600px) {
+   .cover-wrapper{
+    height: 30vh;
+  }
+  .quote, p{
+    font-size: 1rem;
+  }
+  .color-overlay{
+    background-color: #23294698;
+  }
+  .navbar{
+    position: relative;
+  }
+  
+  #content{
+    width: 100vw;
+  }
+  .about-presentation{
+    flex-direction: column-reverse;
+  }
+  .profile-picture{
+    width: 60vw;
+    height: 60vh;
+  }
+  .my-skills-container {
+    width: 90vw;
+    left: 5%;
+    padding: 25px 10px;
+  }
+  .shape-1{
+    height: 180px;
+    width: 180px;
+    left:30%;
+  }
+  .shape-2{
+    height: 80px;
+    width:80px;
+    top: 90px;
+  }
+  .shape-3{
+    height: 200px;
+    width: 200px;
+    top: 500px;
+    left: 40px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {  
+  .cover-wrapper{
+    height: 40vh;
+  }
+  .quote, p{
+    font-size: 1rem;
+  }
+  .color-overlay{
+    background-color: #23294698;
+  }
+  .navbar{
+    position: relative;
+  }  
+  
+  .about-presentation{
+    flex-direction: column-reverse;
+  }
+  .profile-picture{
+    width: 40vw;
+    height: 40vh;
+  }
+  .my-skills-container {
+    width: 90vw;
+    left: 5%;
+    padding: 25px 10px;
+  }
+  .shape-1{
+    height: 180px;
+    width: 180px;
+    left:50%;
+  }
+  .shape-2{
+    height: 80px;
+    width:80px;
+    top: 90px;
+  }
+  .shape-3{
+    height: 200px;
+    width: 200px;
+    top: 500px;
+    left: 40px;
+  }
+}
+/* LAPTOPS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cover-wrapper{
+    height: 45vh;
+  } 
+  .navbar{
+    position: relative;
+  }
+  
+  .about-presentation{
+    padding: 0%;
+  }
+  .profile-picture{
+    width: 50vw;
+    height: 70vh;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .shape-1{
+    height: 200px;
+    width: 200px;
+    left:30%;
+  }
+  .shape-2{
+    top: 70px;
+  }
+  .shape-3{
+    height: 200px;
+    width: 200px;
+    top: 600px;
+    left: 500px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){ 
+  .profile-picture{
+    width: 30vw;
+    height: 40vh;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px){
+  .profile-picture{
+    width: 30vw;
+    height: 60vh;
+  } 
+  #content{
+    width: 100vw;
+  }  
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1919px){
+  .quote{
+    font-size: 2.5rem;
+  }
+  .my-skills-container{      
+    width: 50vw;
+    left: 25%;
+  }  
+  .shape-1{
+    height: 200px;
+    width: 200px;
+    left:25%;
+    top: 100px;
+  }
+  .shape-2{
+    right: 330px;
+  }
+  .shape-3{
+    height: 250px;
+    width: 250px;
+    top: 500px;
+    left: 500px;
+  }
+}
+@media only screen and (min-width: 1920px){
+  .quote{
+    font-size: 3rem;
+  }
+  .my-skills-container{      
+    width: 50vw;
+    left: 25%;
+  }
+  .shape-1{
+    height: 200px;
+    width: 200px;
+    left:600px;
+    top: 100px;
+  }
+  .shape-2{
+    right: 440px;
+  }
+  .shape-3{
+    height: 250px;
+    width: 250px;
+    top: 500px;
+    left: 700px;
+  }
+}
+  
