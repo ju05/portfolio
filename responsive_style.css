@@ -80,8 +80,8 @@
     flex-direction: column-reverse;
   }
   .profile-picture{
-    width: 60vw;
-    height: 60vh;
+    width: 40vw;
+    height: 30vh;
   }
   .my-skills-container {
     width: 90vw;

@@ -129,11 +129,17 @@ p{
   height: 100%; 
 }
 
-.quote{
+.color-overlay h1{
   position: absolute;
   right: 15%;
   font-size: 2rem;
   color: var(--main-paragraph)
+}
+.color-overlay span{
+  color: var(--second-paragraf);
+  float: right;
+  margin-top: 5%;
+  font-size: 1rem;
 }
 
 .cover-wrapper{
