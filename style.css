@@ -212,6 +212,7 @@ text-shadow:
 }
 
 .my-skills-container{
+  margin-top: 10vh;
   width: 60vw;
   left: 20%;
   padding: 40px 50px;
@@ -266,6 +267,7 @@ text-shadow:
 
 span{
   color: var(--main-headline);
+  text-shadow: 2px 2px var(--main-bg)
 }
 h2{
   display: flex;
@@ -356,6 +358,10 @@ h2{
   100%{
     width: 70%;
   }
+}
+
+#my-projects{
+  margin-top: 70vh;
 }
 
 .projects-container{
