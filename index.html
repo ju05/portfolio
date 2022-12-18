@@ -14,19 +14,18 @@
 <body>   
       <div class="total-wrapper">
         <header>
-            <nav class="navbar navbar-dark navbar-expand-lg">
-                <button class="navbar-toggler" style="color:#b8c1ec ;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="hamburguer">
-                  <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-dark navbar-expand-md">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav" id="nav-ul">
-                    <button class="button-nav"><a class="nav-item nav-link active" href="#about">About </button></a>
-                    <button class="button-nav"><a class="nav-item nav-link" href="#my-projects">Work</button></a>
-                    <button class="button-nav"><a class="nav-item nav-link" href="#contact-me">Contact</a></button>
-                  </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#my-projects" class="nav-link">Work</a></li>
+                        <li class="nav-item"><a href="#contact-me" class="nav-link">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
-
             <div class="cover-wrapper" style="background-image: url(./images/cover-dall-e_j.amaralwork@gmail.com.jpeg);" id="cover-image">
                 <div class="color-overlay d-flex justify-content-end align-items-center">
                 <h1 class="quote">"Our passion for learning <br>is our tool for survival." <br> <span style="font-size: 1rem;">- Carl Sagan, Cosmos - </span></h1>
@@ -137,7 +136,7 @@
                         <div class="project-card">
                             <h1>Recipes Searcher and Planner</h1>
                             <p>A meals planner and searcher with special login (regular users or chefs/restaurants)
-                                made with Google OAuth 2.0 authentication through Dajngo allauth. <br>
+                                made with Google OAuth 2.0 authentication through Django allauth. <br>
                                 The users can search for a recipe and add it to their calendar using Google Calendar API.</p>
                             <div class="project-image">
                                 <img src="images/recipapp.jpg" alt="pint-screen of the home page">                                
@@ -148,7 +147,7 @@
                             </div>
                         </div>
                         <div class="project-card">
-                            <h1>Hotel Menagement</h1>
+                            <h1>Hotel Management</h1>
                             <p>A website with two interfaces one for the visitors and another for the staff.
                                 The visitor interface allows to login, contact the hotel, check availability and make a Booking.
                                 The project was made with Django and PostgreSQL allowing the staff management: they can make reservations for the users, delete and edit bookings
